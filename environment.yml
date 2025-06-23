@@ -1,0 +1,27 @@
+name: shelfranger
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core dependencies
+  - python=3.10
+  - pip
+  - numpy
+  - pillow
+  - pytorch
+  - torchvision
+  - requests
+  
+  # Plotting dependencies
+  - matplotlib
+  - seaborn
+  
+  # Additional utilities
+  - pandas
+  - pyyaml
+  - tqdm
+  
+  - pip:
+    - ultralytics==8.1.2
+    - streamlit==1.31.1
+    - opencv-python-headless==4.9.0.80 

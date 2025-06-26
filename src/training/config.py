@@ -10,10 +10,10 @@ TRAINING_CONFIG = {
     
     # Dataset parameters
     "data_yaml": "dataset/data.yaml",  # Dataset configuration
-    "batch_size": 16,           # Batch size
+    "batch_size": 32,           # Batch size (optimized for GPU)
     
     # Training parameters
-    "device": "auto",           # Training device (auto-detect GPU/CPU)
+    "device": 0,                # Training device (GPU 0 - RTX 3060)
     "workers": 4,               # Number of worker threads
     "patience": 50,             # Early stopping patience
     

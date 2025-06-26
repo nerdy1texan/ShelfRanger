@@ -85,9 +85,8 @@ def plot_metrics(results, plots_dir):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     metrics = results.results_dict
     
-    # Set style
-    plt.style.use('seaborn')
-    sns.set_palette("husl")
+    # Set style (using ggplot instead of seaborn for compatibility)
+    plt.style.use('ggplot')
     
     # Plot training losses
     plt.figure(figsize=(12, 6))
